@@ -56,8 +56,6 @@ mongoose
 multer
 ```
 
-````
-
 ## Installation
 
 ```bash
@@ -81,4 +79,4 @@ cd ../client
 
 # Install Client Dependencies
 npm install
-````
+```
