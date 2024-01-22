@@ -1,0 +1,41 @@
+@use "../../sass/globals/variables";
+@use "../../sass/globals/mixins";
+
+.cart-container {
+  font-size: 1rem;
+  .cart-contents {
+    font-size: 1rem;
+
+    & > * + * {
+      margin-top: 1rem;
+    }
+
+    .cart-row {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background: white;
+
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        span {
+          padding: 0.5rem 1rem;
+          outline: 1px solid black;
+          cursor: pointer;
+          @include mixins.button;
+        }
+      }
+    }
+  }
+}

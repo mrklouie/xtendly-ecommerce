@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "name": "prosperna-ecom-test",
+  "description": "Develop a comprehensive e-commerce application using ReactJS, showcasing your proficiency in building dynamic and interactive web interfaces. Your project should emphasize the creation of reusable components, the utilization of helper functions and partials, and the implementation of custom hooks. Additionally, the application must include a suite of unit tests using either Mocha or Jest, ensuring the reliability and maintainability of the code.\r ## Key Features:\r 1. Reusable Components: Design modular and reusable components that can be utilized across various parts of the application. This includes elements like product cards, navigation bars, form controls, and any other common interface elements.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "server": "npm run server --prefix server",
+    "client": "npm run dev --prefix client",
+    "start": "concurrently kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prosperna/prosperna-ecom-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prosperna/prosperna-ecom-test/issues"
+  },
+  "homepage": "https://github.com/Prosperna/prosperna-ecom-test#readme"
+}

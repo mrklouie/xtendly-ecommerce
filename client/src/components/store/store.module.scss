@@ -1,0 +1,46 @@
+@use "../../sass/globals/variables";
+
+.store-container {
+  font-size: 1rem;
+  &__contents {
+    font-size: 1rem;
+
+    .products-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+
+      gap: 1rem;
+    }
+  }
+}
+
+@media (min-width: 568px) {
+  .store-container {
+    &__contents {
+      .products-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (min-width: 848px) {
+  .store-container {
+    &__contents {
+      .products-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media (min-width: 1136px) {
+  .store-container {
+    &__contents {
+      .products-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}

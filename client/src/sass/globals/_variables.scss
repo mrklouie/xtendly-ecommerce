@@ -1,0 +1,14 @@
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semiBold": 600,
+  "bold": 700,
+);
+
+$price-color: #ee4d2d;
+$padding: min(75rem, 80%);
+
+@function getFontWeight($weight) {
+  @return map-get($font-weights, $weight);
+}

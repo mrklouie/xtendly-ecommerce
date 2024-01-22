@@ -1,0 +1,13 @@
+@use "./globals";
+@use "./components";
+
+:root {
+  --fs-small: 0.75rem;
+  --fs-regular: 1rem;
+  --fs-medium: 1.5rem;
+  --fs-big: 2rem;
+}
+
+#root {
+  background-color: whitesmoke;
+}

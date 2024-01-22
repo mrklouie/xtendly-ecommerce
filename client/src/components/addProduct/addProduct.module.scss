@@ -1,0 +1,61 @@
+@use "../../sass/globals/variables";
+@use "../../sass/globals/mixins";
+
+.add-product-container {
+  font-size: 1rem;
+
+  &__contents {
+    font-size: 1rem;
+
+    form {
+      input,
+      select,
+      textarea {
+        width: 100%;
+      }
+
+      input {
+        font-size: var(--fs-regular);
+        @include mixins.input;
+      }
+      select {
+        font-size: var(--fs-regular);
+        @include mixins.select;
+      }
+      textarea {
+        font-size: var(--fs-regular);
+        resize: none;
+      }
+
+      button {
+        padding: 0.5rem;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .add-product-container {
+    &__contents {
+      form {
+        input,
+        select,
+        textarea {
+          width: unset;
+        }
+
+        input {
+        }
+        select {
+        }
+        textarea {
+        }
+
+        button {
+        }
+      }
+    }
+  }
+}

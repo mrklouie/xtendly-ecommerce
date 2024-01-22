@@ -1,0 +1,55 @@
+@use "../globals/variables";
+
+@mixin select {
+  padding: 0.5rem;
+  display: block;
+  font-size: var(--fs-regular);
+
+  &::placeholder {
+    font-size: var(--fs-regular);
+  }
+}
+
+@mixin input {
+  padding: 0.5rem;
+  display: block;
+  font-size: var(--fs-regular);
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  &::--webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &::placeholder {
+    font-size: var(--fs-regular);
+  }
+}
+
+@mixin button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: variables.$price-color;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  will-change: transform;
+  transition: transform 150ms ease-in-out;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+@mixin badge {
+  font-size: var(--fs-small);
+  padding: 0 1rem;
+  background-color: variables.$price-color;
+  color: white;
+  border-radius: 0.25rem;
+}

@@ -1,0 +1,128 @@
+@use "../../sass/globals/variables";
+@use "../../sass/globals/mixins";
+
+.main-container {
+  font-size: 1rem;
+  width: variables.$padding;
+  margin-inline: auto;
+  min-height: 100vh;
+  &__wrapper {
+    font-size: 1rem;
+  }
+
+  &__contents {
+    font-size: 1rem;
+
+    .header {
+      padding: 3rem 0;
+      font-size: 1rem;
+
+      nav {
+        font-size: 1rem;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        .left {
+          padding: 2rem 0;
+          ul {
+            list-style-type: none;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            gap: 3rem;
+            li {
+              list-style-type: none;
+              a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                font-size: var(--fs-regular);
+              }
+            }
+          }
+        }
+
+        .right {
+          display: block;
+          align-items: center;
+          gap: 0.5rem;
+
+          input,
+          select {
+            display: block;
+            width: 100%;
+          }
+
+          input {
+            @include mixins.input;
+          }
+
+          select.price_sort {
+            @include mixins.select;
+          }
+
+          select.category {
+            @include mixins.select;
+          }
+
+          input.search {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .body-contents {
+      font-size: 1rem;
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    &__wrapper {
+    }
+
+    &__contents {
+      .header {
+        nav {
+          display: flex;
+          .left {
+            padding: 0;
+            ul {
+              justify-content: unset;
+              li {
+                a {
+                }
+              }
+            }
+          }
+
+          .right {
+            display: flex;
+            input,
+            select {
+              display: unset;
+            }
+            input {
+            }
+
+            select.price_sort {
+            }
+
+            select.category {
+            }
+
+            input.search {
+              max-width: 15rem;
+            }
+          }
+        }
+      }
+
+      .body-contents {
+      }
+    }
+  }
+}
