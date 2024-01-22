@@ -24,6 +24,8 @@ Make sure you have the following installed on your machine:
 
 - **State Management:**
   - [Zustand](https://github.com/pmndrs/zustand) for efficient and reactive state management.
+- **Sorting and Filtering:**
+  - Implementation of sorting and filtering options for a better user experience in product navigation.
 - **Caching:**
   - [React Query](https://react-query.tanstack.com/) for caching and efficient data fetching.
 - **CRUD Operations:**
