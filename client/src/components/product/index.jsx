@@ -40,7 +40,7 @@ function Index() {
 
   const handleAddToCart = () => {
     const { product_name, _id, product_price } = product;
-    addToCart({ product_name, _id, product_price });
+    addToCart({ product_name, _id, product_price, quantity: 1 });
     navigate("/cart");
   };
 

@@ -79,6 +79,7 @@ function index() {
 
   return (
     <div className={styles["add-product-container"]}>
+      <h2>UPLOAD YOUR PRODUCT HERE</h2>
       <small>{isEdit ? "PATCH" : "POST"}</small>
       <div className={styles["add-product-container__contents"]}>
         <Form

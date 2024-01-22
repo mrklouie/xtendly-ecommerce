@@ -76,11 +76,14 @@
           }
 
           & > .button-contents {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
             button {
               @include mixins.button;
+              display: block;
+              margin-inline: auto;
+
+              @media (min-width: 1024px) {
+                margin-inline: unset;
+              }
             }
           }
         }
