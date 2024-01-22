@@ -22,7 +22,6 @@ const errorHandlerMiddleware = require("./middleware/errorHandler");
 
 // Route Imports
 const productsRoute = require("./routes/products");
-const { async } = require("rxjs");
 
 //Routes
 app.use(express.static(path.resolve(__dirname, "./public")));
