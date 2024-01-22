@@ -30,6 +30,8 @@ Make sure you have the following installed on your machine:
   - Full CRUD functionality for managing products.
 - **Debounce Search Functionality:**
   - This helps reduce the number of unnecessary requests or computations triggered by each keystroke, improving performance and minimizing unnecessary resource usage.
+- **Database / server-side:**
+  - This is a full-stack application, with data storage implemented in a MongoDB database. The server-side is built with Node.js and Express, while the client-side is developed using React. The communication between the client and server is facilitated by Axios for efficient data transfer.
 
 ## Dependencies
 
