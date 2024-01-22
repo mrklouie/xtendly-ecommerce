@@ -27,8 +27,9 @@ Make sure you have the following installed on your machine:
 - **Caching:**
   - [React Query](https://react-query.tanstack.com/) for caching and efficient data fetching.
 - **CRUD Operations:**
-
   - Full CRUD functionality for managing products.
+- **Debounce Search Functionality:**
+  - This helps reduce the number of unnecessary requests or computations triggered by each keystroke, improving performance and minimizing unnecessary resource usage.
 
 ## Dependencies
 
