@@ -40,6 +40,7 @@ function Index() {
                 addToCart={addToCart}
                 _id={item._id}
                 removeCart={removeCart}
+                deleteCart={deleteCart}
               />
             );
           })
@@ -63,6 +64,7 @@ function CartRow({
   addToCart,
   _id,
   removeCart,
+  deleteCart,
 }) {
   return (
     <>
@@ -70,7 +72,8 @@ function CartRow({
         <div className={styles.left}>
           <span>{product_name}</span>
           <span>
-            x{quantity} = {quantity * product_price}
+            x{quantity} = ₱
+            {new Intl.NumberFormat("en-US").format(quantity * product_price)}
           </span>
         </div>
         <div className={styles.right}>
@@ -79,7 +82,7 @@ function CartRow({
           >
             -
           </span>
-          <span>Delete</span>
+          <span onClick={deleteCart}>Delete</span>
           <span
             onClick={() =>
               addToCart({ product_name, _id, product_price, quantity: 1 })

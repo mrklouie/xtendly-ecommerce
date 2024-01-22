@@ -82,39 +82,7 @@ const store = (set, get) => ({
       };
     }),
 
-  // addToCart: ({ product_name, _id, product_price, quantity }) =>
-  //   set((state) => {
-  //     const myArr = [
-  //       ...state.orders,
-  //       { product_name, _id, product_price, quantity },
-  //     ];
-
-  //     const groupedItems = myArr.reduce((result, item) => {
-  //       const key = item.product_name;
-  //       if (item.product_name) {
-  //         if (!result[key]) {
-  //           result[key] = {
-  //             product_name: key,
-  //             product_price: item.product_price,
-  //             quantity: item.quantity,
-  //             totalPrice: item.quantity * item.product_price,
-  //           };
-  //         } else {
-  //           result[key].quantity += item.quantity;
-  //         }
-  //       }
-
-  //       return result;
-  //     }, {});
-
-  //     console.log(groupedItemsArray);
-
-  //     return {
-  //       orders: [...state.orders, groupedItems],
-  //     };
-  //   }),
-
-  deleteCart: () => set({ cart: {} }),
+  deleteCart: () => set({ cart: [] }),
 
   decrementQuantity: () =>
     set((state) => {

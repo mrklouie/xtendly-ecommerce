@@ -1,5 +1,5 @@
 @use "../../sass/globals/variables";
-
+@use "../../sass/globals/mixins";
 .product-item-wrapper {
   background-color: white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
@@ -21,7 +21,7 @@
       width: 100%;
       height: 100%;
       display: none;
-      background-color: rgba(238, 77, 45, 0.5);
+      background-color: rgba(238, 77, 45, 0.35);
       z-index: 2;
       place-content: center;
 
@@ -34,6 +34,8 @@
           font-size: var(--fs-small);
           padding: 0.25rem 1rem;
           cursor: pointer;
+
+          @include mixins.button;
         }
       }
 

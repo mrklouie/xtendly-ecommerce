@@ -4,16 +4,22 @@
 .add-product-container {
   font-size: 1rem;
 
+  .header {
+    padding: 1rem 0;
+    h2,
+    small {
+      display: block;
+      text-align: center;
+    }
+  }
+
   &__contents {
     font-size: 1rem;
 
     form {
-      input,
-      select,
-      textarea {
-        width: 100%;
+      & > * + * {
+        margin-top: 1rem;
       }
-
       input {
         font-size: var(--fs-regular);
         @include mixins.input;
@@ -25,12 +31,23 @@
       textarea {
         font-size: var(--fs-regular);
         resize: none;
+        padding: 0.5rem;
+      }
+
+      input,
+      select,
+      textarea,
+      button {
+        display: block;
+        width: min(50rem, 100%);
+        margin-inline: auto;
       }
 
       button {
         padding: 0.5rem;
         display: block;
         cursor: pointer;
+        @include mixins.button;
       }
     }
   }
@@ -40,12 +57,6 @@
   .add-product-container {
     &__contents {
       form {
-        input,
-        select,
-        textarea {
-          width: unset;
-        }
-
         input {
         }
         select {
@@ -54,6 +65,11 @@
         }
 
         button {
+        }
+
+        input,
+        select,
+        textarea {
         }
       }
     }
