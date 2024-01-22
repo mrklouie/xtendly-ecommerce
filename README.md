@@ -59,8 +59,7 @@ multer
 ## Installation
 
 ```bash
-# Clone the Repository
-git clone https://github.com/your-username/simple-ecommerce-web-app.git
+
 
 # Navigate to the Root Folder
 cd simple-ecommerce-web-app
