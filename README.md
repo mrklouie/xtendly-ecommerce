@@ -6,7 +6,7 @@ https://ecommerce-assessment.onrender.com/
 
 ## Introduction
 
-Welcome to the Simple E-Commerce Web App! This is a basic example or a mini e-commerce application created for a front-end development assessment. Please note that this application lacks some features that you might find in a complete e-commerce solution. It serves as a starting point for understanding the implementation of essential features like adding, editing, deleting, and reading products.
+This is a basic example or a mini e-commerce application created for a front-end development assessment. Please note that this application lacks some features that you might find in a complete e-commerce solution. It serves as a starting point for understanding the implementation of essential features like adding, editing, deleting, and reading products.
 
 ## Requirements
 
@@ -17,8 +17,8 @@ Make sure you have the following installed on your machine:
 
 ## Versions
 
-- **React Version:** 18.2.0 (This may vary based on the latest version available at the time of assessment)
-- **Node.js Version:** 18.12.1 (This may vary based on the latest LTS version available at the time of assessment)
+- **React Version:** 18.2.0
+- **Node.js Version:** 18.12.1
 
 ## Features
 
