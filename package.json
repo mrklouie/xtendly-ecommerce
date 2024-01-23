@@ -1,11 +1,38 @@
 {
-  "dependencies": {
-    "concurrently": "^8.2.2"
-  },
   "name": "prosperna-ecom-test",
-  "description": "Develop a comprehensive e-commerce application using ReactJS, showcasing your proficiency in building dynamic and interactive web interfaces. Your project should emphasize the creation of reusable components, the utilization of helper functions and partials, and the implementation of custom hooks. Additionally, the application must include a suite of unit tests using either Mocha or Jest, ensuring the reliability and maintainability of the code.\r ## Key Features:\r 1. Reusable Components: Design modular and reusable components that can be utilized across various parts of the application. This includes elements like product cards, navigation bars, form controls, and any other common interface elements.",
   "version": "1.0.0",
+  "description": "https://ecommerce-assessment.onrender.com/",
   "main": "index.js",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "ansi-styles": "^4.3.0",
+    "ansi-regex": "^5.0.1",
+    "cliui": "^8.0.1",
+    "concurrently": "^8.2.2",
+    "color-convert": "^2.0.1",
+    "date-fns": "^2.30.0",
+    "color-name": "^1.1.4",
+    "escalade": "^3.1.1",
+    "emoji-regex": "^8.0.0",
+    "regenerator-runtime": "^0.14.1",
+    "get-caller-file": "^2.0.5",
+    "has-flag": "^4.0.0",
+    "lodash": "^4.17.21",
+    "is-fullwidth-code-point": "^3.0.0",
+    "require-directory": "^2.1.1",
+    "spawn-command": "^0.0.2",
+    "rxjs": "^7.8.1",
+    "shell-quote": "^1.8.1",
+    "strip-ansi": "^6.0.1",
+    "string-width": "^4.2.3",
+    "supports-color": "^8.1.1",
+    "tree-kill": "^1.2.2",
+    "tslib": "^2.6.2",
+    "wrap-ansi": "^7.0.0",
+    "y18n": "^5.0.8",
+    "yargs": "^17.7.2",
+    "yargs-parser": "^21.1.1"
+  },
   "devDependencies": {},
   "scripts": {
     "server": "npm run server --prefix server",
@@ -14,13 +41,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Prosperna/prosperna-ecom-test.git"
+    "url": "git+https://github.com/mrklouie/xtendly-ecommerce.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Prosperna/prosperna-ecom-test/issues"
+    "url": "https://github.com/mrklouie/xtendly-ecommerce/issues"
   },
-  "homepage": "https://github.com/Prosperna/prosperna-ecom-test#readme"
+  "homepage": "https://github.com/mrklouie/xtendly-ecommerce#readme"
 }
